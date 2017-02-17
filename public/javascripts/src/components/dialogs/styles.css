@@ -1,0 +1,7 @@
+.add-item-dialog > div > div{
+  width: 45%!important;
+}
+
+.dialog-text-field {
+  display: block;
+}

@@ -9,10 +9,14 @@ import Inventory from './containers/Inventory';
 //Needed for material-ui click events
 injectTapEventPlugin();
 
+const addItemToList = (item) => {
+  console.log(item);
+};
+
 axios.get('/stock').then((data) => {
   const App = () => (
     <MuiThemeProvider>
-      <Inventory stock={data.data.data}/>
+      <Inventory stock={data.data.data} addItem={addItemToList} />
     </MuiThemeProvider>
   );
   ReactDOM.render(
