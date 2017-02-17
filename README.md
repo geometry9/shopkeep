@@ -1,4 +1,4 @@
-# Project Template
+# ShopKeep exercise
 
 Local Development
 -----------------
